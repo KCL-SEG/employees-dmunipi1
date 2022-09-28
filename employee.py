@@ -33,7 +33,7 @@ class Employee:
             type += " and receives a bonus commission of " + str(self.bonus_commissions)
         if self.contract_commission:
             type += " and receives a commission for " + str(self.numberOf_contracts) + " contract(s) at " + str(self.contract_commission) + "/contract"
-        print(f'{self.name} works on a {type}. Their total pay is {self.get_pay()}.')
+        return (f'{self.name} works on a {type}. Their total pay is {self.get_pay()}.')
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
