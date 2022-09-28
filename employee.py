@@ -33,7 +33,7 @@ class Employee:
             type += " and receives a bonus commission of " + str(self.bonus_commissions)
         if self.contract_commission:
             type += " and receives a commission for " + str(self.numberOf_contracts) + " contract(s) at " + str(self.contract_commission) + "/contract"
-        return (f'{self.name} works on a {type}. Their total pay is {self.get_pay()}.')
+        return (f'{self.name} works on a {type}.  Their total pay is {self.get_pay()}.')
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
@@ -53,3 +53,12 @@ robbie = Employee(name = 'Robbie', salary = 2000, bonus_commissions = 1500)
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee(name = 'Ariel', hourly_pay = 30, hours_worked = 120, bonus_commissions = 600)
+
+
+
+print(billie.__str__())
+print(charlie.__str__())
+print(renee.__str__())
+print(jan.__str__())
+print(robbie.__str__())
+print(ariel.__str__())
